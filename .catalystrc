@@ -1,0 +1,30 @@
+{
+  "defaults": {
+    "project": 1,
+    "env": 1
+  },
+  "actives": {
+    "project": 1,
+    "env": 1
+  },
+  "projects": [
+    {
+      "idx": 1,
+      "id": "27429000000008080",
+      "name": "FahadhCodes",
+      "domain": {
+        "id": "10092617479",
+        "name": "fahadhcodes-873160713.development"
+      },
+      "timezone": "Asia/Colombo",
+      "env": [
+        {
+          "idx": 1,
+          "id": "873160713",
+          "name": "Development",
+          "type": 3
+        }
+      ]
+    }
+  ]
+}
