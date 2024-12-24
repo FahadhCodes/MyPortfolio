@@ -59,7 +59,7 @@ a.nav-link:visited {
   background-image: linear-gradient(#42431300, #424313);
   background-position-y: 70px;
   background-repeat: no-repeat;
-  font-size: 2.0rem;
+  font-size: 2rem;
   font-family: var(--font-style), sans-serif;
 }
 .nav-item {
@@ -612,7 +612,8 @@ a.footer-link:hover {
 }
 /*----------------------*/
 /*Laptop*/
-@media screen and (min-width:1180px) and (max-width:1549px){
+
+@media screen and (min-width: 1180px) and (max-width: 1549px) {
   :root {
     --WST: 250px;
     --YST: 430px;
@@ -630,9 +631,9 @@ a.footer-link:hover {
   .tx-2 {
     font-size: 3.5rem !important;
     letter-spacing: 0.2rem;
-    word-spacing: 0rem;  
+    word-spacing: 0rem;
   }
-  .tx-3{
+  .tx-3 {
     font-size: 2.2rem;
   }
 
@@ -640,8 +641,47 @@ a.footer-link:hover {
     font-size: large;
     height: 235px;
   }
-
 }
+
+@media screen and (min-width: 1270px) and (max-width: 1285px) {
+  :root {
+    --WST: 200px !important;
+    --YST: 334px !important;
+    --YSTmove: 64px !important;
+    --img-bg: 336px !important;
+    --img: 328px !important;
+    --img-m: 4px !important;
+  }
+  * {
+    font-size: 80%;
+  }
+  .tx-2 {
+    font-size: 4.5rem !important;
+  }
+  .tx-3 {
+    font-size: 2rem;
+  }
+  .G-para {
+    font-size: 1.2rem;
+    height: 235px;
+  }
+  .contact-name > .tx-2 {
+    font-size: 2.9rem !important;
+  }
+  .contact-name > .tx-3 {
+    font-size: 1.9rem !important;
+  }
+  i.fa-brands {
+    font-size: 1.6rem;
+  }
+  .footer-link {
+    font-size: 1.2rem;
+  }
+  .content-para {
+    font-size: 540% !important;
+  }
+}
+
 /*Tablet*/
 @media screen and (min-width: 700px) and (max-width: 1050px) {
   .tx-2 {
