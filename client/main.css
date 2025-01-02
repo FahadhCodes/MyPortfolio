@@ -643,7 +643,7 @@ a.footer-link:hover {
   }
 }
 
-@media screen and (min-width: 1270px) and (max-width: 1285px) {
+@media screen and (min-width: 1270px) and (max-width: 1380px) {
   :root {
     --WST: 200px !important;
     --YST: 334px !important;
