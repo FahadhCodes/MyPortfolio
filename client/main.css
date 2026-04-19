@@ -1,6 +1,27 @@
 /* {
    --font-style: "";
 }*/
+/*Variable*/
+:root {
+  --WST: 250px;
+  --YST: 430px;
+  --YSTmove: 80px;
+  --img-bg: 420px;
+  --img: 410px;
+  --img-m: 5px;
+  /*protfolioLOGO*/
+  --Left: 23%;
+  /*Quick Acces links*/
+  --font-size: 2.25rem;
+  --font-size-hover: 2.8rem;
+  --l-spacing: 0.25rem;
+
+  /* projectCarousel */
+  --G-paraFontSize: 1em;
+}
+/*----------------------*/
+/*Laptop*/
+
 .fw-medium {
   font-weight: 500 !important;
 }
@@ -102,10 +123,8 @@ a.nav-link:hover {
   word-spacing: 0rem;
 }
 .tx-3 {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   font-weight: 300;
-  letter-spacing: 3.7px;
-  word-spacing: 15px;
 }
 .tx-4 {
   font-size: 1.5rem;
@@ -246,7 +265,9 @@ a.qa-link:focus {
   font-weight: 400;
   font-size: 2.8rem;
   color: yellow;
-  text-shadow: 0px 0px 70px #ffff00, 0px 0px 20px #ffc400;
+  text-shadow:
+    0px 0px 70px #ffff00,
+    0px 0px 20px #ffc400;
 }
 p {
   text-align: justify;
@@ -430,8 +451,7 @@ p.content-para {
   /*height: 20%;*/
 }
 .G-para {
-  font-size: large;
-  height: 220px;
+  font-size: var(--G-paraFontSize);
 }
 
 .hireme-btn {
@@ -439,20 +459,26 @@ p.content-para {
   /*height: 60%;*/
 }
 .showcase {
-  height: 27vh;
-  width: 27vh;
-  background-size: 85%;
+  /* background-size: 85%;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #00000046;
-  border-radius: 6.25%;
-  margin-block: 1rem;
-
+  border-radius: 6.25%;*/
+  margin-block: 1rem; 
+  overflow: hidden;
   border: #fad126 solid 1px;
 }
 .showcase.Intro-showcase {
   padding: 0.5rem;
-  width: 55vh;
+  height: 35vh;
+  width: 60vh;
+}
+.LOGO-showcase {
+  height: 25vh;
+  width:40vh;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .intro {
   width: 100%;
@@ -460,7 +486,8 @@ p.content-para {
 }
 .showcase.Cover-showcase {
   padding: 0rem;
-  height: 33vh;
+  height: 27vh;
+  width: 27vh;
 }
 /*Section 5-PC*/
 .contact-full {
@@ -477,13 +504,7 @@ p.content-para {
   margin: auto;
   display: flex;
   justify-content: space-between;
-  background-image: linear-gradient(
-    150deg,
-    #ffff001c,
-    #ffff0000,
-    #ffff0000,
-    #ffff001c
-  );
+  background-image: linear-gradient(150deg, #ffff001c, #ffff0000, #ffff0000, #ffff001c);
 }
 .content-image-side {
   border-right: solid 1px yellow;
@@ -491,7 +512,9 @@ p.content-para {
 .contact-IMG {
   background-image: linear-gradient(135deg, #fad126, #ff564e);
   border-radius: 50%;
-  box-shadow: 0px 0px 15px #fad126, 0px 0px 30px #ff564e;
+  box-shadow:
+    0px 0px 15px #fad126,
+    0px 0px 30px #ff564e;
   width: 300px;
   height: 300px;
   background-repeat: no-repeat;
@@ -595,25 +618,8 @@ a.footer-link:hover {
 .footer-water-mark-image {
   filter: drop-shadow(0px 0px 5px yellow);
 }
-/*Variable*/
-:root {
-  --WST: 250px;
-  --YST: 430px;
-  --YSTmove: 80px;
-  --img-bg: 420px;
-  --img: 410px;
-  --img-m: 5px;
-  /*protfolioLOGO*/
-  --Left: 23%;
-  /*Quick Acces links*/
-  --font-size: 2.25rem;
-  --font-size-hover: 2.8rem;
-  --l-spacing: 0.25rem;
-}
-/*----------------------*/
-/*Laptop*/
 
-@media screen and (min-width: 1180px) and (max-width: 1549px) {
+@media screen and (min-aspect-ratio: 1) and (max-aspect-ratio: 1.6) {
   :root {
     --WST: 250px;
     --YST: 430px;
@@ -638,19 +644,18 @@ a.footer-link:hover {
   }
 
   .G-para {
-    font-size: large;
-    height: 235px;
+    font-size: var(--G-paraFontSize);
   }
 }
 
-@media screen and (min-width: 1270px) and (max-width: 1380px) {
+@media screen and (min-aspect-ratio: 1) and (max-aspect-ratio: 1.5) {
   :root {
-    --WST: 200px !important;
-    --YST: 334px !important;
-    --YSTmove: 64px !important;
-    --img-bg: 336px !important;
-    --img: 328px !important;
-    --img-m: 4px !important;
+    --WST: 200px;
+    --YST: 334px;
+    --YSTmove: 64px;
+    --img-bg: 336px;
+    --img: 328px;
+    --img-m: 4px;
   }
   * {
     font-size: 80%;
@@ -662,8 +667,7 @@ a.footer-link:hover {
     font-size: 2rem;
   }
   .G-para {
-    font-size: 1.2rem;
-    height: 235px;
+    font-size: calc(var(--G-paraFontSize) * 0.6);
   }
   .contact-name > .tx-2 {
     font-size: 2.9rem !important;
@@ -683,7 +687,7 @@ a.footer-link:hover {
 }
 
 /*Tablet*/
-@media screen and (min-width: 700px) and (max-width: 1050px) {
+@media screen and (min-aspect-ratio: 0.6) and (max-aspect-ratio: 0.77) {
   .tx-2 {
     font-size: 3.7rem !important;
   }
@@ -781,12 +785,12 @@ a.footer-link:hover {
   /*variable-tablets*/
   :root {
     /*IMG*/
-    --WST: 166.6666px !important;
-    --YST: 286.6666px !important;
-    --YSTmove: 53.3333px !important;
-    --img-bg: 280px !important;
-    --img: 273.3333px !important;
-    --img-m: 3.33333px !important;
+    --WST: 166.6666px;
+    --YST: 286.6666px;
+    --YSTmove: 53.3333px;
+    --img-bg: 280px;
+    --img: 273.3333px;
+    --img-m: 3.33333px;
     /*Quick Acces links*/
     --font-size: 1.5rem;
     --font-size-hover: 1.6rem;
@@ -794,15 +798,14 @@ a.footer-link:hover {
 }
 
 /*TABLET UNIQUE*/
-@media screen and (min-width: 1020px) and (max-width: 1025px) {
+@media screen and (min-aspect-ratio: 0.7) and (max-aspect-ratio: 0.9) {
   /*Section 4-M-UQ*/
 
   .custom-head {
     font-size: 1.3rem;
   }
   .G-para {
-    font-size: large !important;
-    height: 240px;
+    font-size: var(--G-paraFontSize);
   }
   .hireme {
     font-size: small !important;
@@ -846,11 +849,11 @@ a.footer-link:hover {
 
 /*---------------------*/
 /*mobile opmization*/
-@media screen and (min-width: 350px) and (max-width: 1050px) {
+@media screen and (min-aspect-ratio: 0.4) and (max-aspect-ratio: 0.78) {
   /*SECTION 1-mobile*/
   :root {
-    --WST: 125px;
-    --YST: 215px;
+    --WST: 125px !important;
+    --YST: 215px !important;
     --YSTmove: 40px;
     --img-bg: 210px;
     --img: 205px;
@@ -1030,8 +1033,7 @@ a.footer-link:hover {
     font-size: 1.3rem;
   }
   .G-para {
-    font-size: medium;
-    height: 260px;
+    font-size: var(--G-paraFontSize);
   }
   .hireme {
     font-size: small;
