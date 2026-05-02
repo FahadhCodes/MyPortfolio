@@ -31,6 +31,7 @@ setInterval(() => {
     document.querySelector(".fill").style.width = "100%";
     document.querySelector(".loadingScreen").style.opacity = 0;
     document.querySelector("body").style.overflowY = "scroll";
+    document.querySelector("body").style.overflowX = "hidden";
     setTimeout(() => {
       document.querySelector(".loadingScreen").style.display = "none";
     }, 2000);
