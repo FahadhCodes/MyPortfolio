@@ -638,14 +638,9 @@
       const head = document.querySelectorAll(".heading");
       let sign = "";
       head.forEach((sec, index) => {
-        if (index % 2 == 0) {
-          sign = "-";
-        } else {
-          sign = "";
-        }
         gsap.from(sec, {
           opacity: 0,
-          transform: `translateX(${sign}20vw)`,
+          transform: "translateX(-20vw)",
           duration: 1,
           scrollTrigger: {
             trigger: sec,
