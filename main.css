@@ -795,14 +795,14 @@ p.content-para {
 }
 .carousel-area,
 .card-body {
-  width: 100%;
+  width: var(--carouselWidth);
 }
 .carousel-inner {
-  width: 100%;
+  width: var(--carouselWidth);
 }
 .carousel-item {
-  /* aspect-ratio: 1.6; */
-  height: var(--carouselHeight);
+  aspect-ratio: 1.6;
+  /* height: var(--carouselHeight); */
   width: var(--carouselWidth);
   /* width: fit-content; */
   background-size: contain;
