@@ -151,9 +151,10 @@ section.sec1 {
   /* section 3 */
 }
 /*----------------------*/
-/* .sectionCont {
-  border: #fad126 1px solid;
-} */
+.sectionCont {
+  width: 100vw;
+  overflow-x: hidden;
+}
 .sectionCont:nth-of-type(even) {
   opacity: 0;
   transform: translateX(10vw);
