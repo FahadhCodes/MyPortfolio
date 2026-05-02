@@ -14,7 +14,7 @@
   --whiteSqareColor: "";
   --whiteSqareGlow: "";
   /* section03 */
-  --carouselWidth: 30em;
+  --carouselWidth: 26em;
 }
 /* Loading */
 .loadingScreen {
@@ -185,7 +185,6 @@ body {
 
 /*.....SECTION 1......*/
 .sec2 {
-  border: 1px solid yellow;
   width: 100vw;
   overflow: hidden;
 }
