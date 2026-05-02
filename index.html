@@ -635,11 +635,17 @@
     ></script>
     <script>
       gsap.registerPlugin(ScrollTrigger);
-      const sections = document.querySelectorAll(".sectionCont");
-      sections.forEach((sec) => {
-        gsap.to(sec, {
-          transform: "translateY(0vw)",
-          opacity: 1,
+      const head = document.querySelectorAll(".heading");
+      let sign = "";
+      head.forEach((sec, index) => {
+        if (index % 2 == 0) {
+          sign = "-";
+        } else {
+          sign = "";
+        }
+        gsap.from(sec, {
+          opacity: 0,
+          transform: `translateX(${sign}20vw)`,
           duration: 1,
           scrollTrigger: {
             trigger: sec,

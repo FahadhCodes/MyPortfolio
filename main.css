@@ -157,20 +157,6 @@ section.sec1 {
   /* section 3 */
 }
 /*----------------------*/
-.sectionCont:nth-of-type(even) {
-  opacity: 0;
-  transform: translateX(-10vw);
-  /* opacity: 1;
-  transform: translateY(0vh); */
-  /* border: 1px solid #fad126; */
-}
-.sectionCont:nth-of-type(odd) {
-  opacity: 0;
-  transform: translateX(10vw);
-  /* opacity: 1;
-  transform: translateY(0vh); */
-  /* border: 1px solid #fad126; */
-}
 .fw-medium {
   font-weight: 500 !important;
 }
