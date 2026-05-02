@@ -148,7 +148,7 @@
       <div class="slideCont">
         <div class="slideSec2 slide1 text-light text-center">
           <div class="qa-item">
-            <h3 class="qa-link qal-1 headtype-D">About me</h3>
+            <h3 class="qa-link qal-1 headtype-D" id="aboutMe">About me</h3>
             <div class="qaline-1 qaline"></div>
           </div>
           <div class="text-white overflow-hidden" style="padding: 2em">
@@ -164,7 +164,7 @@
             </p>
           </div>
         </div>
-        <div class="slideSec2 slide2 text-light text-center">
+        <div class="slideSec2 slide2 text-light text-center" id="edu">
           <div class="qa-item">
             <h3 class="qa-link qal-2 headtype-D">Education</h3>
             <div class="qaline-2 qaline"></div>
@@ -218,7 +218,7 @@
             </div>
           </div>
         </div>
-        <div class="slideSec2 slide3 text-light text-center">
+        <div class="slideSec2 slide3 text-light text-center" id="certificate">
           <div class="qa-item">
             <h3 class="qa-link qal-3 headtype-D">Certificates</h3>
             <div class="qaline-3 qaline"></div>
@@ -232,7 +232,7 @@
             <div class="certify col cer-6" data-imgurl="Images/CERTICATE/certificate\(6\).jpg" onclick="certOverview(this)"></div>
           </div>
         </div>
-        <div class="slideSec2 slide4 text-light text-center">
+        <div class="slideSec2 slide4 text-light text-center" id="skills">
           <div class="qa-item">
             <h3 class="qa-link qal-4 headtype-D">Skills</h3>
             <div class="qaline-4 qaline"></div>
@@ -550,69 +550,33 @@
     <!-----------------------------------------------------/CONTACTBOX----------------------------------------------------->
     <section class="sec6">
       <div class="container-fluid footer-body m-0 p-0" style="border-top: 1px yellow solid">
-        <div class="container-fluid footer-up row m-0 p-0 row" style="background-color: #ffff001c">
-          <div class="col-4 m-0 p-0">
-            <div class="row m-0 p-0">
-              <a href="#"><div class="m-0 p-0 footer-img"></div></a>
-            </div>
-            <div class="row m-0 p-0">
-              <div class="container-fluid button-set col-12 d-flex justify-content-between pb-4 m-0 footer-social-media">
-                <div class="btn btn-type-2 text-dark">
-                  <a target="_blank" href="https://www.facebook.com/fahad.mohamed.2948" class="text-dark"><i class="fa-brands fa-facebook"></i></a>
-                </div>
-                <div class="btn btn-type-2 text-dark">
-                  <a target="_blank" href="https://www.instagram.com/digital_dreamer7/" class="text-dark"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-                <div class="btn btn-type-2 text-dark">
-                  <a
-                    target="_blank"
-                    href="https://wa.me/+94762963380?text=Hi%20I%20recently%20saw%20your%20profile%20from%20your%20Portfolio"
-                    class="text-dark"
-                    ><i class="fa-brands fa-whatsapp"></i
-                  ></a>
-                </div>
-                <div class="btn btn-type-2 text-dark">
-                  <a target="_blank" href="https://t.me/ghost_2948" class="text-dark"><i class="fa-brands fa-telegram"></i></a>
-                </div>
-                <div class="btn btn-type-2 text-dark">
-                  <a target="_blank" href="https://github.com/FahadhCodes" class="text-dark"><i class="fa-brands fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-8 m-0 p-0">
+        <div class="d-flex justify-content-around footer-up row m-0 p-5 row" style="background-color: #ffff001c">
+          <div
+            class="col-3"
+            style="
+              background-image: url(&quot;Images/LOGO.png&quot;);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: contain;
+            "
+          ></div>
+          <div class="col-1 mx-2" style="border-left: #fefe31 1px solid"></div>
+          <div class="col-7">
             <div class="row m-0 p-0" style="height: 100%">
-              <div class="col-6 m-0 px-xl-5" style="height: 100%">
-                <h3 class="align-items-center d-flex headtype-D footer-hedings">Highlights</h3>
+              <div class="col-12 m-0 px-xl-5" style="height: 100%">
+                <h3 class="align-items-center d-flex headtype-D footer-hedings justify-content-center p-5">Highlights</h3>
                 <div class="link-set-1 row">
-                  <div class="col-12">
-                    <a class="align-items-center d-flex footer-link" href="#overview">Overview</a>
+                  <div class="col-3">
+                    <a class="align-items-center justify-content-center -text-center d-flex footer-link" href="#overview">Overview</a>
                   </div>
-                  <div class="col-12">
-                    <a class="align-items-center d-flex footer-link" href="#work">Work</a>
+                  <div class="col-3">
+                    <a class="align-items-center justify-content-center -text-center d-flex footer-link" href="#projects">Projects</a>
                   </div>
-                  <div class="col-12">
-                    <a class="align-items-center d-flex footer-link" href="#gallery">Gallery</a>
+                  <div class="col-3">
+                    <a class="align-items-center justify-content-center -text-center d-flex footer-link" href="#gallery">Gallery</a>
                   </div>
-                  <div class="col-12">
-                    <a class="align-items-center d-flex footer-link" href="#contact">Contact</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 m-0 px-xl-5 p-0">
-                <h3 class="align-items-center d-flex headtype-D footer-hedings">Summary</h3>
-                <div class="link-set-1 row">
-                  <div class="col-12">
-                    <a class="align-items-center d-flex footer-link" href="#about">About me</a>
-                  </div>
-                  <div class="col-12">
-                    <a class="align-items-center d-flex footer-link" href="#edu">Education</a>
-                  </div>
-                  <div class="col-12">
-                    <a class="align-items-center d-flex footer-link" href="#certificate">Certificate</a>
-                  </div>
-                  <div class="col-12">
-                    <a class="align-items-center d-flex footer-link" href="#skills">Skills</a>
+                  <div class="col-3">
+                    <a class="align-items-center justify-content-center -text-center d-flex footer-link" href="#contact">Contact</a>
                   </div>
                 </div>
               </div>
@@ -621,7 +585,7 @@
         </div>
       </div>
       <div class="container-fluid py-2 m-0 text-center" style="background-color: #ffff002c">
-        <span class="footer-water-mark-image" style="color: #fefe31; font-weight: 700">Powered By </span
+        <span class="footer-water-mark-image" style="color: #fefe31; font-weight: 700">Developed by </span
         ><img src="Images/Fahad white.png" width="30px" class="footer-water-mark-image" />
       </div>
     </section>
