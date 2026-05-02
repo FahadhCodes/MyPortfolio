@@ -15,6 +15,7 @@
   --whiteSqareGlow: "";
   /* section03 */
   --carouselWidth: 26em;
+  --carouselHeight: 13em;
 }
 /* Loading */
 .loadingScreen {
@@ -789,6 +790,7 @@ p.content-para {
 .CarouselCard {
   background-image: linear-gradient(150deg, #ffff001c, #ffff0000, #ffff0000, #ffff001c);
   width: var(--carouselWidth);
+  /* width: fit-content; */
   overflow: hidden;
 }
 .carousel-area,
@@ -799,8 +801,10 @@ p.content-para {
   width: 100%;
 }
 .carousel-item {
-  aspect-ratio: 1.6;
+  /* aspect-ratio: 1.6; */
+  height: var(--carouselHeight);
   width: var(--carouselWidth);
+  /* width: fit-content; */
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
