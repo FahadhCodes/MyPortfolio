@@ -1,0 +1,649 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fahadh Muhammadh</title>
+    <link rel="icon" type="image/png" href="Images/favicon.png" />
+    <!--BOOTSTRAP-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <!--Fontawesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="lottie.js"></script>
+  </head>
+  <!-- Loading -->
+  <main>
+    <div class="loadingScreen">
+      <div id="bm" class="centerDiv"></div>
+      <div class="text centerDiv">LOADING</div>
+      <div class="bar rounded-pill centerDiv">
+        <div class="fill rounded-pill"></div>
+      </div>
+    </div>
+  </main>
+  <!-- Loading -->
+  <body>
+    <section class="sectionCont sec1">
+      <!--CONTAINER 1 LOGO -->
+      <div class="cont divImgProperty" style="background-image: url(&quot;Images/LOGO.png&quot;)"></div>
+      <!-- CONTAINER 2 NAV-->
+      <div class="cont">
+        <!--Off canvas-->
+        <div class="col-2 pt-4 pe-4 offcanva">
+          <button class="btn btn-type-1 off-canvas-start">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <div class="off-canvas bg-dark text-white">
+            <div class="offcanvas-header">
+              <div class="col">
+                <div class="row container-fluid justify-content-end">
+                  <button class="off-canvas-end btn btn-type-1 col-1 text-center p-0 mt-3">
+                    <i class="fa-solid fa-close"></i>
+                  </button>
+                </div>
+                <div class="row">
+                  <h5><img src="Images/LOGO.png" width="300px" /></h5>
+                </div>
+              </div>
+            </div>
+            <div class="offcanvas-body bg-dark">
+              <ul style="list-style: none; line-height: 5rem">
+                <li><a class="nav-link" href="#overview">Overview</a></li>
+                <li><a class="nav-link" href="#projects">Projects</a></li>
+                <li><a class="nav-link" href="#gallery">Gallery</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--NAV-->
+
+        <div class="nav d-flex text-white">
+          <nav class="d-flex w-100" style="height: 100%; justify-content: space-between; width: 100%">
+            <div class="text-center nav-item">
+              <a href="#overview" class="nav-link text-center ni-1 p-0">Overview</a>
+            </div>
+            <div class="text-center nav-item">
+              <a href="#projects" class="nav-link text-center ni-2 p-0">Projects</a>
+            </div>
+            <div class="text-center nav-item">
+              <a href="#gallery" class="nav-link text-center ni-3 p-0">Gallery</a>
+            </div>
+            <div class="text-center nav-item">
+              <a href="#contact" class="nav-link text-center ni-4 p-0">Contact</a>
+            </div>
+          </nav>
+          <div class="animline d-flex">
+            <div class="linerunner"></div>
+          </div>
+        </div>
+      </div>
+      <!-- CONTAINER 3 self Into-->
+      <div class="cont ps-lg-3">
+        <!-- ---------- -->
+        <div class="tx-1 col-12 text-white">Hi</div>
+        <div class="tx-2 col-12 text-white">
+          <span style="white-space: pre">I'm </span><span class="myName text-warning fw-bold">Fahadh Muhammadh</span>
+        </div>
+        <div class="myRoles tx-3 col-12">Developer</div>
+      </div>
+      <!-- CONTAINER 4 Animation with pic-->
+      <div class="cont" style="display: grid; justify-items: center; align-items: center">
+        <div class="profilLOGO">
+          <div class="img-bg border border-warning">
+            <div class="img"></div>
+          </div>
+          <div class="white-square"></div>
+          <div class="yellow-square"></div>
+        </div>
+      </div>
+      <!-- CONTAINER 5 into paragraph-->
+      <div class="cont px-lg-4 pt-lg-5">
+        <p class="tx-4 px-4 px-lg-0">
+          Welcome to my creative space! I'm a passionate university student focused on building intelligent, scalable web applications and software
+          using modern technologies. Currently, I'm diving deep into AI-related research and development, with a strong focus on solving real-world
+          problems.
+        </p>
+        <div class="btn-sec">
+          <a href="#overview" class="btn btn-type-1">Know More</a>
+        </div>
+      </div>
+    </section>
+    <!---------------------------------------------------optimize------------------------------------------------->
+    <!-----------------------------------------------------NEW----------------------------------------------------->
+    <!-----------------------------------------------------NEW----------------------------------------------------->
+    <div class="span" id="overview"></div>
+    <section class="sectionCont sec2">
+      <!-- heading -->
+      <div class="heading d-flex">
+        <p class="">My Story & <span class="text-warning fw-medium">Achievements</span></p>
+      </div>
+      <!-- heading -->
+      <div class="popup"></div>
+      <div class="slideCont">
+        <div class="slideSec2 slide1 text-light text-center">
+          <div class="qa-item">
+            <h3 class="qa-link qal-1 headtype-D">About me</h3>
+            <div class="qaline-1 qaline"></div>
+          </div>
+          <div class="text-white overflow-hidden" style="padding: 2em">
+            <p class="about-para normal-body-text">
+              I am currently pursuing a BSc in Computer Sciences & Technology at Sabaragamuwa University of Sri Lanka with a strong interest in
+              Artificial Intelligence. My goal is to master Artificial Intelligence and Machine Learning, but I also enjoy learning across multiple
+              domains including Web Development, Software Development and Cyber Security. I am currently building a strong foundation by working on
+              real-world projects, back-end systems, and intelligent applications.
+            </p>
+            <p class="about-para normal-body-text">
+              Alongside programming, I have experience with creative tools such as Adobe After Effects, Photoshop, and Illustrator, which help me
+              approach problems with both technical and design thinking.
+            </p>
+          </div>
+        </div>
+        <div class="slideSec2 slide2 text-light text-center">
+          <div class="qa-item">
+            <h3 class="qa-link qal-2 headtype-D">Education</h3>
+            <div class="qaline-2 qaline"></div>
+          </div>
+          <div class="mainEduCont p-3">
+            <div class="eduCont">
+              <h4 class="headtype-2 fw-light">G.C.E. Ordinary Level Examination (2017)</h4>
+              <p class="content-para">
+                Passed G.C.E. Ordinary Level Examination with
+                <span class="text-warning fw-medium d-block"> 4A, 3B, 2C</span>
+                Specially,
+                <span class="text-warning fst-italic fw-medium d-block">Science |A| Mathematics |B| English |C|</span>
+              </p>
+            </div>
+            <div class="eduCont">
+              <h4 class="headtype-2 fw-light">G.C.E. Advance Level Examination 2021(2022)</h4>
+              <p class="content-para">
+                Passed G.C.E. Advance Level Examination in physical science stream with
+                <span class="text-warning fw-medium">three credit passes.</span>
+                <span class="text-warning fst-italic fw-medium d-block">Subjects: Combined Mathematics, Physics and Chemistry</span>
+                <span class="text-warning fst-italic fw-medium d-block">Z-Score: 0.5755</span>
+              </p>
+            </div>
+            <div class="eduCont">
+              <h4 class="headtype-2 fw-light">Certificate in Web Designing</h4>
+              <p class="content-para">
+                <i><i class="text-warning d-block">Completed:</i> August 10, 2023 – December 22, 2023</i>
+                A comprehensive four-month course covering the fundamentals of web design, including
+                <b class="fw-medium text-warning"> HTML, CSS,</b> and
+                <b class="fw-medium text-warning">Bootstrap</b>
+                for responsive design techniques.
+              </p>
+            </div>
+            <div class="eduCont">
+              <h4 class="headtype-2 fw-light">Diploma in Web Design and Development</h4>
+              <p class="content-para">
+                <span class="d-block"><i class="text-warning">Completed:</i><i> November 19, 2023 – June 23, 2024</i></span>
+                A six-month diploma program at Warlton International Campus, where I learned advanced web development skills, including
+                <b class="fw-medium text-warning">HTML, CSS, Bootstrap, MySQL, PHP, and jQuery.</b>
+              </p>
+            </div>
+            <div class="eduCont">
+              <h4 class="headtype-2 fw-light">BSc in Computer Sciences & Technology</h4>
+              <p class="content-para">
+                <i class="text-warning">Ongoing: </i><i>September 12, 2023 – Present</i>
+                Currently pursuing a
+                <b class="fw-medium text-warning"> Bachelor of Science (Hons) in Computer Sciences & Technology </b>
+                at
+                <b class="fw-medium text-warning">Sabaragamuwa University of Sri Lanka (2021/2022 batch).</b>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="slideSec2 slide3 text-light text-center">
+          <div class="qa-item">
+            <h3 class="qa-link qal-3 headtype-D">Certificates</h3>
+            <div class="qaline-3 qaline"></div>
+          </div>
+          <div class="citems">
+            <div class="certify col cer-1" data-imgurl="Images/CERTICATE/certificate\(1\).jpg" onclick="certOverview(this)"></div>
+            <div class="certify col cer-2" data-imgurl="Images/CERTICATE/certificate\(2\).png" onclick="certOverview(this)"></div>
+            <div class="certify col cer-3" data-imgurl="Images/CERTICATE/certificate\(3\).jpg" onclick="certOverview(this)"></div>
+            <div class="certify col cer-4" data-imgurl="Images/CERTICATE/certificate\(4\).jpg" onclick="certOverview(this)"></div>
+            <div class="certify col cer-5" data-imgurl="Images/CERTICATE/certificate\(5\).jpg" onclick="certOverview(this)"></div>
+            <div class="certify col cer-6" data-imgurl="Images/CERTICATE/certificate\(6\).jpg" onclick="certOverview(this)"></div>
+          </div>
+        </div>
+        <div class="slideSec2 slide4 text-light text-center">
+          <div class="qa-item">
+            <h3 class="qa-link qal-4 headtype-D">Skills</h3>
+            <div class="qaline-4 qaline"></div>
+          </div>
+          <div class="skillCont">
+            <div class="proSki skset">
+              <div class="proSki skLabel">Programming</div>
+              <div class="proSki upModul">
+                <img src="https://img.icons8.com/?size=100&id=20909" alt="HTML" class="proSki html" />
+                <img src="https://img.icons8.com/?size=100&id=21278" alt="css" class="proSki css" />
+                <img src="https://img.icons8.com/?size=100&id=tGvHBPJaKqEd" alt="js" class="proSki js" />
+                <img src="https://img.icons8.com/?size=100&id=13441" alt="python" class="proSki python" />
+                <img src="https://img.icons8.com/?size=100&id=rgPSE6nAB766" alt="MySQL" class="proSki mysql" />
+                <img src="https://img.icons8.com/?size=100&id=shQTXiDQiQVR" alt="C" class="proSki c" />
+                <img src="https://img.icons8.com/?size=100&id=55251" alt="C#" class="proSki csharp" />
+                <img src="https://img.icons8.com/?size=100&id=13679" alt="JAVA" class="proSki java" />
+                <img src="https://img.icons8.com/?size=100&id=f0R4xVI4Sc8O" alt="PHP" class="proSki php" />
+                <!-- wanna add new skill? add img link in this same format -->
+              </div>
+              <div class="proSki downModul">
+                <img src="https://img.icons8.com/?size=100&id=EzPCiQUqWWEa&format=png&color=000000" alt="Bootstrap" class="proSki bootstrap" />
+                <img
+                  data-module="down"
+                  src="https://img.icons8.com/?size=100&id=HKNzD81eiiSc&format=png&color=000000"
+                  alt="jQuery"
+                  class="proSki jquery"
+                />
+                <img
+                  data-module="down"
+                  src="https://img.icons8.com/?size=100&id=ewGOClUtmFX4&format=png&color=000000"
+                  width="60"
+                  alt="flask"
+                  class="proSki flask"
+                />
+                <img data-module="down" src="https://img.icons8.com/color/50/pandas.png" alt="pandas" class="proSki pandas" />
+                <img data-module="down" src="https://img.icons8.com/color/50/numpy.png" alt="numpy" class="proSki numpy" />
+                <img data-module="down" src="https://img.icons8.com/color/50/matplotlib.png" alt="matplotlib" class="proSki matplotlib" />
+              </div>
+            </div>
+            <div class="softTool skset">
+              <div class="skLabel">Software Tools</div>
+              <div class="softTool upModul">
+                <img src="Images\Gallery\SKILLS\image-6.png" alt="photoshop" class="softTool photoshop" />
+                <img src="Images\Gallery\SKILLS\image-7.png" alt="illustrator" class="softTool illustrator" />
+                <img src="Images\Gallery\SKILLS\image-8.png" alt="aftereffect" class="softTool aftereffect" />
+              </div>
+              <div class="softTool downModul">
+                <img src="Images\Gallery\SKILLS\image-9.png" alt="access" class="softTool access" />
+                <img src="Images\Gallery\SKILLS\image-10.png" alt="exel" class="softTool exel" />
+                <img src="https://img.icons8.com/?size=100&id=3sGOUDo9nJ4k&format=png&color=000000" alt="PoweBI" class="softTool powebi" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-----------------------------------------------------PROJECTS----------------------------------------------------->
+    <div class="span" id="projects"></div>
+    <section class="sectionCont sec3">
+      <div class="container-fluid heading p-0 pt-5 mt-3 px-lg-5">
+        <p>My<span class="text-warning fw-medium"> Projects</span></p>
+      </div>
+      <div class="container-fluid card-container p-0 m-0 row">
+        <div class="col-lg-6 col-12 my-3 d-flex justify-content-center projCard">
+          <div class="card CarouselCard">
+            <div class="d-flex carousel-area">
+              <div id="leoUni" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" style="background-image: url(&quot;Images/Gallery/LEOUNI\ \(1\).png&quot;)"></div>
+                  <div class="carousel-item" style="background-image: url(&quot;Images/Gallery/LEOUNI\ \(2\).png&quot;)"></div>
+                  <div class="carousel-item" style="background-image: url(&quot;Images/Gallery/LEOUNI\ \(3\).png&quot;)"></div>
+                  <div class="carousel-item" style="background-image: url(&quot;Images/Gallery/LEOUNI\ \(4\).png&quot;)"></div>
+                  <div class="carousel-item" style="background-image: url(&quot;Images/Gallery/LEOUNI\ \(5\).png&quot;)"></div>
+                  <div class="carousel-item" style="background-image: url(&quot;Images/Gallery/LEOUNI\ \(6\).png&quot;)"></div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#leoUni" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#leoUni" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+            <div class="card-body card-proj-body">
+              <h5 class="card-title headtype-2 fw-medium text-center custom-head d-flex row justify-content-center">
+                Leo International University <br />
+                System
+              </h5>
+              <p class="card-text normal-body-text G-para px-lg-2 p-0 row d-flex align-items-center">
+                Developed a dynamic university management system integrating the main website with a learning management module. Implemented an Admin
+                panel for efficient CRUD operations using the Fetch API for smooth data handling, along with separate dashboards for staff and
+                students. Designed responsive interfaces with Bootstrap and added interactivity using JavaScript. This project strengthened my
+                full-stack development skills and understanding of database-driven web applications.
+              </p>
+              <div class="d-flex justify-content-center hireme row">
+                <a href="https://github.com/FahadhCodes/leoInternationalUniversitySystem" target="_blank" class="btn btn-type-1 hireme-btn"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12 my-3 d-flex justify-content-center projCard">
+          <div class="card CarouselCard">
+            <div class="d-flex carousel-area">
+              <div id="mobile-electronic" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" style="background-image: url(Images/Gallery/Library\(1\).png)"></div>
+                  <div class="carousel-item" style="background-image: url(&quot;Images/Gallery/Library\(2\).png&quot;)"></div>
+                  <div class="carousel-item" style="background-image: url(&quot;Images/Gallery/Library\(3\).png&quot;)"></div>
+                  <div class="carousel-item" style="background-image: url(&quot;Images/Gallery/Library\(4\).png&quot;)"></div>
+                  <div class="carousel-item" style="background-image: url(&quot;Images/Gallery/Library\(5\).png&quot;)"></div>
+                  <div class="carousel-item" style="background-image: url(&quot;Images/Gallery/Library\(6\).png&quot;)"></div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#mobile-electronic" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#mobile-electronic" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+            <div class="card-body card-proj-body">
+              <h5 class="card-title headtype-2 fw-medium text-center custom-head d-flex row justify-content-center">
+                A Library Management <br />
+                System (LMS)
+              </h5>
+              <p class="card-text normal-body-text G-para px-lg-2 p-0 row d-flex align-items-center">
+                A Library Management System (LMS) prototype developed using C# WinForms to streamline basic library operations and user access. The
+                system features a secure login interface with masked password input, structured UI design, and error handling for authentication.
+                Designed with an expandable architecture, it serves as a foundation for future enhancements like database integration, CRUD
+                operations, and role-based access. This project demonstrates core concepts in desktop application development, user interface design,
+                and scalable system planning.
+              </p>
+              <div class="d-flex justify-content-center hireme row">
+                <a href="https://github.com/FahadhCodes/LibraryManagementSystem" target="_blank" class="btn btn-type-1 hireme-btn"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12 my-3 d-flex justify-content-center projCard">
+          <div class="card CarouselCard">
+            <div class="d-flex carousel-area">
+              <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" style="background-image: url(&quot;Images/Gallery/CustomerOrder (1).jfif&quot;)"></div>
+                  <div class="carousel-item" style="background-image: url(&quot;Images/Gallery/CustomerOrder (2).jfif&quot;)"></div>
+                  <div class="carousel-item" style="background-image: url(&quot;Images/Gallery/CustomerOrder (3).jfif&quot;)"></div>
+                  <div class="carousel-item" style="background-image: url(&quot;Images/Gallery/CustomerOrder (4).jfif&quot;)"></div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+            <div class="card-body card-proj-body">
+              <h5 class="card-title headtype-2 fw-medium text-center custom-head d-flex row justify-content-center">
+                Customer Order Management <br />
+                System
+              </h5>
+              <p class="card-text normal-body-text G-para px-lg-2 p-0 row d-flex align-items-center">
+                A Customer Order Management System developed in C to manage customer details, product orders, and billing through a menu-driven
+                console interface. The system supports adding, updating, deleting, and searching customer records, along with dynamic product
+                management and real-time total price calculation. It also generates detailed bills with delivery tracking and stores data using file
+                handling. Built using linked lists and modular functions, the project demonstrates strong fundamentals in data structures, file
+                management, and structured programming.
+              </p>
+              <div class="d-flex justify-content-center hireme row">
+                <a href="https://github.com/FahadhCodes/CustomerOrderManagementSystem" target="_blank" class="btn btn-type-1 hireme-btn"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-----------------------------------------------------/PROJECTS----------------------------------------------------->
+    <!-----------------------------------------------------GALLERY----------------------------------------------------->
+    <div class="span" id="gallery"></div>
+    <section class="sectionCont sec4">
+      <div class="container-fluid heading p-0 pt-5 mt-3 px-lg-5">
+        <p>My<span class="text-warning fw-medium"> Gallery</span></p>
+      </div>
+      <div class="container-fluid card-container pt-lg-3 px-lg-5 px-sm-0 p-0 m-0 row">
+        <div class="headCont">
+          <div class="container-fluid headtype-D">Social Media Post</div>
+        </div>
+        <div class="container-fluid row row-cols-xl-5 row-cols-lg-3 row-cols-2 d-flex justify-content-center m-0">
+          <div class="container post-showcase showcase col" style="background-image: url(Images/Gallery/POST/POST\(1\).png)"></div>
+          <div class="container post-showcase showcase col" style="background-image: url(Images/Gallery/POST/POST\(2\).png)"></div>
+          <div class="container post-showcase showcase col" style="background-image: url(Images/Gallery/POST/POST\(3\).png)"></div>
+          <div class="container post-showcase showcase col" style="background-image: url(Images/Gallery/POST/POST\(4\).png)"></div>
+        </div>
+        <div class="headCont">
+          <div class="container-fluid headtype-D">Video Productions</div>
+        </div>
+        <div class="container-fluid row row-cols-xl-5 row-cols-lg-3 row-cols-2 d-flex justify-content-center m-0">
+          <div class="container Intro-showcase showcase col">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/5KGBbjU8rtk?si=q24XYGBZGycE02Hr"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="container Intro-showcase showcase col">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/woVyIta2gQo?si=JVCzzmtr7dRfCmK7"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="container Intro-showcase showcase col">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/1GdWofXGCIc?si=9BlafNBFgtFsyh98"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <script></script>
+    </section>
+    <!-----------------------------------------------------/GALLERY----------------------------------------------------->
+    <!-----------------------------------------------------CONTACTBOX----------------------------------------------------->
+    <div class="span" id="contact"></div>
+    <section class="sectionCont sec5 container">
+      <div class="contactBox contact-box">
+        <div class="contents heading d-flex justify-content-center">
+          <p class="text-center">Contact <span class="text-warning fw-medium">Me</span></p>
+        </div>
+        <div class="contents imageLogo">
+          <div class="contact-IMG">
+            <img src="Images/Profile.png" width="100%" style="border-radius: 50%" />
+          </div>
+        </div>
+        <div class="contents details">
+          <div class="det">Contact Address</div>
+          <div class="det">
+            Sinharaja Hostel Complex, <br />
+            pambahinna, Belihuloya, <br />
+            Sabaragamuwa University of Sri Lanka.
+          </div>
+          <div class="det">Permanant Address</div>
+          <div class="det">
+            094, <br />
+            Mosque Road, <br />
+            Kahatagasdigiliya, <br />
+            Anuradhapura.
+          </div>
+          <div class="det">Phone Number</div>
+          <div class="det">+94762963380</div>
+          <div class="det">Email</div>
+          <div class="det"><a href="mailto: fahad.work2948@gmail.com" class="mail-link">fahad.work2948@gmail.com</a></div>
+        </div>
+        <div class="contents contact-name">
+          <span class="name fw-bold">Fahadh <span class="text-warning">Muhammadh</span></span>
+        </div>
+        <style>
+          /* .btn.btn-type-2.text-dark {
+            transform: scale(0);
+          } */
+        </style>
+        <div class="contents quick-access-link">
+          <div class="btn btn-type-2 text-dark">
+            <a target="_blank" href="https://www.facebook.com/fahad.mohamed.2948" class="text-dark"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+          <div class="btn btn-type-2 text-dark">
+            <a target="_blank" href="https://www.instagram.com/digital_dreamer7/" class="text-dark"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <div class="btn btn-type-2 text-dark">
+            <a
+              target="_blank"
+              href="https://wa.me/+94762963380?text=Hi%20I%20recently%20saw%20your%20profile%20from%20your%20Portfolio"
+              class="text-dark"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+          </div>
+          <div class="btn btn-type-2 text-dark">
+            <a target="_blank" href="https://t.me/ghost_2948" class="text-dark"><i class="fa-brands fa-telegram"></i></a>
+          </div>
+          <div class="btn btn-type-2 text-dark">
+            <a target="_blank" href="https://github.com/FahadhCodes" class="text-dark"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script></script>
+    <!-----------------------------------------------------/CONTACTBOX----------------------------------------------------->
+    <section class="sec6">
+      <div class="container-fluid footer-body m-0 p-0" style="border-top: 1px yellow solid">
+        <div class="container-fluid footer-up row m-0 p-0 row" style="background-color: #ffff001c">
+          <div class="col-4 m-0 p-0">
+            <div class="row m-0 p-0">
+              <a href="#"><div class="m-0 p-0 footer-img"></div></a>
+            </div>
+            <div class="row m-0 p-0">
+              <div class="container-fluid button-set col-12 d-flex justify-content-between pb-4 m-0 footer-social-media">
+                <div class="btn btn-type-2 text-dark">
+                  <a target="_blank" href="https://www.facebook.com/fahad.mohamed.2948" class="text-dark"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <div class="btn btn-type-2 text-dark">
+                  <a target="_blank" href="https://www.instagram.com/digital_dreamer7/" class="text-dark"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="btn btn-type-2 text-dark">
+                  <a
+                    target="_blank"
+                    href="https://wa.me/+94762963380?text=Hi%20I%20recently%20saw%20your%20profile%20from%20your%20Portfolio"
+                    class="text-dark"
+                    ><i class="fa-brands fa-whatsapp"></i
+                  ></a>
+                </div>
+                <div class="btn btn-type-2 text-dark">
+                  <a target="_blank" href="https://t.me/ghost_2948" class="text-dark"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+                <div class="btn btn-type-2 text-dark">
+                  <a target="_blank" href="https://github.com/FahadhCodes" class="text-dark"><i class="fa-brands fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-8 m-0 p-0">
+            <div class="row m-0 p-0" style="height: 100%">
+              <div class="col-6 m-0 px-xl-5" style="height: 100%">
+                <h3 class="align-items-center d-flex headtype-D footer-hedings">Highlights</h3>
+                <div class="link-set-1 row">
+                  <div class="col-12">
+                    <a class="align-items-center d-flex footer-link" href="#overview">Overview</a>
+                  </div>
+                  <div class="col-12">
+                    <a class="align-items-center d-flex footer-link" href="#work">Work</a>
+                  </div>
+                  <div class="col-12">
+                    <a class="align-items-center d-flex footer-link" href="#gallery">Gallery</a>
+                  </div>
+                  <div class="col-12">
+                    <a class="align-items-center d-flex footer-link" href="#contact">Contact</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 m-0 px-xl-5 p-0">
+                <h3 class="align-items-center d-flex headtype-D footer-hedings">Summary</h3>
+                <div class="link-set-1 row">
+                  <div class="col-12">
+                    <a class="align-items-center d-flex footer-link" href="#about">About me</a>
+                  </div>
+                  <div class="col-12">
+                    <a class="align-items-center d-flex footer-link" href="#edu">Education</a>
+                  </div>
+                  <div class="col-12">
+                    <a class="align-items-center d-flex footer-link" href="#certificate">Certificate</a>
+                  </div>
+                  <div class="col-12">
+                    <a class="align-items-center d-flex footer-link" href="#skills">Skills</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid py-2 m-0 text-center" style="background-color: #ffff002c">
+        <span class="footer-water-mark-image" style="color: #fefe31; font-weight: 700">Powered By </span
+        ><img src="Images/Fahad white.png" width="30px" class="footer-water-mark-image" />
+      </div>
+    </section>
+    <!------------------------------JQuery------------------------------------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+      const sections = document.querySelectorAll(".sectionCont");
+      sections.forEach((sec) => {
+        gsap.to(sec, {
+          transform: "translateX(0vw)",
+          opacity: 1,
+          duration: 1,
+          scrollTrigger: {
+            trigger: sec,
+            start: "top center",
+            end: "top bottom",
+            scrub: 1,
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
