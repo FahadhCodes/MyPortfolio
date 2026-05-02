@@ -249,7 +249,7 @@ let contactBoxTl = gsap.timeline({
 contactBoxTl
   .from(".contactBox>.imageLogo", { transform: "scale(0)" })
   .from(".contact-name", { width: "0px" })
-  .from(".det:nth-of-type(odd)", { transform: "translateX(-37vw)", stagger: 0.2 })
+  .from(".det:nth-of-type(odd)", { transform: "translateX(-40vw)", stagger: 0.2 })
   .from(".det:nth-of-type(even)", { transform: "translateX(50vw)", stagger: 0.2 }, "<")
   .to(".btn-type-2", { scale: 1, stagger: 0.2 });
 // Section 05 Scroll Animation
