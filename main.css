@@ -158,17 +158,17 @@ section.sec1 {
 }
 /*----------------------*/
 .sectionCont:nth-of-type(even) {
-  /* opacity: 0;
-  transform: translateX(10vw); */
-  opacity: 1;
-  transform: translateY(0vh);
+  opacity: 0;
+  transform: translateX(10vw);
+  /* opacity: 1;
+  transform: translateY(0vh); */
   /* border: 1px solid #fad126; */
 }
 .sectionCont:nth-of-type(odd) {
-  /* opacity: 0;
-  transform: translateX(-10vw); */
-  opacity: 1;
-  transform: translateY(0vh);
+  opacity: 0;
+  transform: translateX(-10vw);
+  /* opacity: 1;
+  transform: translateY(0vh); */
   /* border: 1px solid #fad126; */
 }
 .fw-medium {
@@ -1078,10 +1078,6 @@ a.footer-link:hover {
     font-size: small !important;
     position: relative;
   }
-  .hireme-btn {
-    /* width: 50% !important;
-    height: 50% !important; */
-  }
 
   /*--------------*/
   .contact-name > .tx-2 {
@@ -1469,10 +1465,6 @@ a.footer-link:hover {
   /*Section 4-T*/
   .hireme {
     font-size: small !important;
-  }
-  .hireme-btn {
-    /* width: 50% !important;
-    height: 50% !important; */
   }
   .contact-IMG {
     width: 250px !important;
