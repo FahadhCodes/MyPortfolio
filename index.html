@@ -29,6 +29,11 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="lottie.js"></script>
+    <style>
+      body {
+        overflow-x: hidden;
+      }
+    </style>
   </head>
   <!-- Loading -->
   <main>
@@ -633,7 +638,7 @@
       const sections = document.querySelectorAll(".sectionCont");
       sections.forEach((sec) => {
         gsap.to(sec, {
-          transform: "translateX(0vw)",
+          transform: "translateY(0vw)",
           opacity: 1,
           duration: 1,
           scrollTrigger: {
