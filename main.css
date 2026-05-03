@@ -988,6 +988,28 @@ section.p5 {
   height: 150vh;
 }
 /*Footer*/
+.sec6 {
+  position: relative;
+  bottom: 0px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.footerCont {
+  align-self: center;
+  /* border: 1px solid yellow; */
+}
+.footerCont:nth-of-type(1),
+.footerCont:nth-of-type(2) {
+  background-color: #242400;
+  height: 150px;
+}
+.footerCont:nth-of-type(3) {
+  grid-column: span 2;
+}
+.footer-link {
+  padding: 1em;
+  box-sizing: border-box;
+}
 section.footer {
   margin: 0px;
   padding: 0px;
