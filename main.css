@@ -955,6 +955,7 @@ a.mail-link:visited {
   justify-self: center;
   overflow: hidden;
   white-space: nowrap;
+  text-align: center;
 }
 .name .tx-3 {
   font-size: 200%;
